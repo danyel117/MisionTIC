@@ -19,18 +19,43 @@ if quiereArepas == "sí" or quiereArepas == "si":
     cantidadArepas = int(input("Digite la cantidad de paquetes de arepas que quiere comprar: "))
 
 #paso 3: calcular el total de la compra
-precioHuevos = 1800
-precioArepas = 5000
-
-if cantidadHuevos > 10:
-    precioHuevos = 1000
-
 if cantidadArepas > 10 and cantidadHuevos > 10:
     precioHuevos = 800
     precioArepas = 2000
+elif cantidadHuevos > 10:
+    precioHuevos = 1000
+    precioArepas = 5000
+else:
+    precioHuevos = 1800
+    precioArepas = 5000
 
-totalCompra = precioHuevos * cantidadHuevos + precioArepas * cantidadArepas
-print(f"El total de su compra es de ${totalCompra} pesos")
+
+subTotal = precioHuevos * cantidadHuevos + precioArepas * cantidadArepas
+print(f"El total de su compra es de ${subTotal} pesos")
+
+# if subTotal > 50000 and (cantidadHuevos == 0 or cantidadArepas==0):
+#     descuento = subTotal * 10 / 100
+#     totalFinal = subTotal - descuento
+# elif subTotal > 50000 and (cantidadHuevos>0 and cantidadArepas>0):
+#     descuento = subTotal * 15 / 100
+#     totalFinal = subTotal - descuento
+# else:
+#     descuento = 0
+#     totalFinal = subTotal
+
+# print(f"El descuento de la compra es de ${descuento} pesos")
+# print(f"El total final de la compra es de ${totalFinal} pesos")
+
+
+descuento = 0
+if subTotal > 50000:
+    if cantidadHuevos == 0 or cantidadArepas == 0:
+        descuento = subTotal * 10 / 100
+    else:
+        descuento = subTotal * 15 / 100
+
+total = subTotal - descuento
+
 
 #Condiciones adicionales que se deben cumplir:
 #1. si el total de la compra es mayor a 50.000, y solo estoy comprando un producto, dar un descuento adicional del 10%
