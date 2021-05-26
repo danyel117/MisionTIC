@@ -9,5 +9,6 @@ d = -5
 e = -2.7
 f = 1
 
-resultado = (a -((b+c)/(d-e))+e-(f**2.3))/(4.5+d)
+resultado = (a - ((b+c)/(d-e)) + e - f**2.3 ) / (4.5 + d)
 
+r= a + (b - c *(d -(a + b) * (c - c/d *a) % a + b*c ) - (b**c)) ** b
