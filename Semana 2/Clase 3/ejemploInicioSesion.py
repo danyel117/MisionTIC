@@ -9,7 +9,7 @@
 maxRetries = 3
 storedPassword = "123abc"
 userPassword = input("Por favor ingrese su contraseña: ")
-cont = 0
+cont = 1
 
 while storedPassword != userPassword and cont < maxRetries:
     print("las contraseñas no coinciden")
