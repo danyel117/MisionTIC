@@ -1,4 +1,4 @@
-numeroIngresadoPorElUsuario = int(input("Adivina cuál número está registrado como varibale: "))
+numeroIngresadoPorElUsuario = 0
 numeroAEncontrar = 7
 
 while numeroIngresadoPorElUsuario != numeroAEncontrar:
