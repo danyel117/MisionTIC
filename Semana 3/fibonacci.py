@@ -6,6 +6,7 @@ listFibonacci = [0,1]
 cont = 1
 while len(listFibonacci)<50:
     listFibonacci.append(listFibonacci[cont] + listFibonacci[cont-1])
+    cont = cont + 1
 
 
 print(listFibonacci)
