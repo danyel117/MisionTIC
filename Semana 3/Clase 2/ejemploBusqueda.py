@@ -18,7 +18,6 @@ def searchNumberInRandomList(numberToFind,listToSearch):
             return index
     return found
 
-
 randomList = BuildListOfRandomNumbers(50,0,100)
 found = searchNumberInRandomList(17,randomList)
 print(randomList)
