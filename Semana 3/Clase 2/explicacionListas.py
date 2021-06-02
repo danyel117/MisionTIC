@@ -64,7 +64,7 @@ print(max(myList))
 print(min(myList))
 
 
-namesList = ["Daniel", "Ana", "Carlos"]
+namesList = ["Daniel", "Ana", "Carlos", "Jose"]
 namesList.sort()
 print("lista de nombres ordenada: ",namesList)
 
