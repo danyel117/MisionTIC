@@ -11,14 +11,15 @@ def isPrimeNumber(number):
 
 
 contPrimeNumbers = 0
+sumPrimeNumbers = 0
 numberToEvaluate = 1
-while contPrimeNumbers < 10:
-    if isPrimeNumber(numberToEvaluate):
+sumPrimeFound = False
+while not sumPrimeFound:
+    if isPrimeNumber(numberToEvaluate) == True:
         contPrimeNumbers = contPrimeNumbers + 1
-        print(numberToEvaluate)
+        sumPrimeNumbers  = sumPrimeNumbers + numberToEvaluate
+        print(numberToEvaluate, sumPrimeNumbers, isPrimeNumber(sumPrimeNumbers))
+        if isPrimeNumber(sumPrimeNumbers) and contPrimeNumbers>=2:
+            sumPrimeFound = True
     
     numberToEvaluate = numberToEvaluate + 1
-
-
-#identificar la primera secuencia de números primos cuya suma
-#también es prima
