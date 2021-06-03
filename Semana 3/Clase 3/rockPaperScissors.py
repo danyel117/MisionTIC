@@ -34,13 +34,13 @@ def evaluateRockPaperScissorsConditions(machine, user):
     elif user == "S" and machine == "P":
         return "user"
 
-
 def playRockPaperScissors():
     contMachine = 0
     contUser = 0
     while contMachine<2 and contUser<2:
         machine = machineSelection()
         user = input("Por favor ingrese su selección (R,P,S): ")
+        print("la máquina seleccionó ", machine)
         result = evaluateRockPaperScissorsConditions(machine,user)
         if result == "machine":
             contMachine = contMachine + 1
@@ -58,8 +58,6 @@ def playRockPaperScissors():
         return "machine"
     elif contUser==2:
         return "user"
-
-
 
 winner = playRockPaperScissors()
 print("El ganador definitivo es: ", winner)
