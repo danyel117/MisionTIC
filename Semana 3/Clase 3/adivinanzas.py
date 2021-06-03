@@ -19,7 +19,6 @@ def GuessTheNumber(maxRetries):
     #contador de intentos del usuario
     contUserGuess = 0
 
-    #variable para determinar si un usuario ganó
     won = False
 
     while contUserGuess < maxGuess and not won:
@@ -39,6 +38,7 @@ def GuessTheNumber(maxRetries):
     return won
 
 result = GuessTheNumber(5)
+
 print(result)
 
 
