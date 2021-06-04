@@ -9,6 +9,13 @@ import random
 # depositar
 
 #ejercicio: agregar condición que saque error si el saldo es negativo
+#ejercicio: cobrar una comisión del 4 pesos por cada 1000 cuando el monto de la consignación sea mayor a 10.000
+
+#ejercicio opcional: crear una lista de cuentas y agregar la posibilidad de crear una cuenta nueva o eliminar una cuenta
+    #cuando se vaya a retitar o a consignar, se debe ingresar el número de la cuenta
+
+# ejercicio opcional: crear una clase persona y a la clase cuenta agregarle una persona pidiéndole su cédula. 
+#Hay que construir una lista de personas. Si la persona no existe, se debe crear.
 
 class CuentaBancaria:
     def __init__(self,saldoInicial):
@@ -16,7 +23,11 @@ class CuentaBancaria:
         self.saldo = saldoInicial
 
     def retirar(self, monto):
-        self.saldo = self.saldo - monto
+        if monto > self.saldo:
+            print("Fondos insuficientes")
+        else:
+            self.saldo = self.saldo - monto
+            print("Retiro Exitoso")
 
     def consignar(self,monto):
         self.saldo = self.saldo + monto
@@ -36,7 +47,6 @@ while True:
     elif operacion == "R":
         monto = float(input("Ingrese el monto que quiere retirar: "))
         cuenta.retirar(monto)
-        print("Retiro Exitoso")
     elif operacion == "C":
         monto = float(input("Ingrese el monto que quiere consignar: "))
         cuenta.consignar(monto)
