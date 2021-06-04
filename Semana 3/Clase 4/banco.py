@@ -8,6 +8,8 @@ import random
 # retirar
 # depositar
 
+#ejercicio: agregar condición que saque error si el saldo es negativo
+
 class CuentaBancaria:
     def __init__(self,saldoInicial):
         self.numeroCuenta = random.randint(1000,10000)
@@ -24,9 +26,21 @@ class CuentaBancaria:
         print("Saldo: ",self.saldo)
         print("________________")
 
-cuenta1 = CuentaBancaria(10000)
-cuenta1.consultarSaldo()
-cuenta1.retirar(500)
-cuenta1.consultarSaldo()
-cuenta1.consignar(20000)
-cuenta1.consultarSaldo()
+
+saldoInicial = float(input("Bienvenido al banco XYZ. Para crear su cuenta bancaria, ingrese el saldo inicial de la cuenta: "))
+cuenta = CuentaBancaria(saldoInicial)
+while True:
+    operacion = input("Ingrese S para consultar el saldo, R para retirar y C para consignar: ")
+    if operacion == "S":
+        cuenta.consultarSaldo()
+    elif operacion == "R":
+        monto = float(input("Ingrese el monto que quiere retirar: "))
+        cuenta.retirar(monto)
+        print("Retiro Exitoso")
+    elif operacion == "C":
+        monto = float(input("Ingrese el monto que quiere consignar: "))
+        cuenta.consignar(monto)
+        print("Consignación exitosa")
+    else:
+        print("Operación incorrecta")
+        
