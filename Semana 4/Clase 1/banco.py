@@ -30,35 +30,48 @@ class CuentaBancaria:
         print("Saldo: ",self.saldo)
         print("________________")
 
-def buscarCuentas(mensajeOperacion):
+def buscarCuentas(mensajeOperacion, listaDeCuentas):
     #pedir el número de la cuenta al usuario
     numCuenta = int(input(mensajeOperacion))
     #buscar la cuenta del usuario. Cuando se encuentre, imprimir el saldo
     for cuenta in listaDeCuentas:
         if cuenta.numeroCuenta == numCuenta:
-            return cuenta
+            return [True,cuenta]
+    return [False]
 
 listaDeCuentas = []
 
 while True:
-    operacion = input("Ingrese N para crear una nueva cuenta, S para consultar el saldo, R para retirar y C para consignar: ")
+    operacion = input("Ingrese N para crear una nueva cuenta, S para consultar el saldo, R para retirar y C para consignar: ").upper()
     if operacion == "N":
         saldoInicial = float(input("Bienvenido al banco XYZ. Para crear su cuenta bancaria, ingrese el saldo inicial de la cuenta: "))
         cuenta = CuentaBancaria(saldoInicial)
         listaDeCuentas.append(cuenta)
         print("Cuenta creada con éxito. El número de la cuenta es ", cuenta.numeroCuenta)
     elif operacion == "S":
-        cuenta = buscarCuentas("Por favor ingrese la cuenta que quiere consultar")
-        cuenta.consultarSaldo()
+        resultadoBusqueda = buscarCuentas("Por favor ingrese la cuenta que quiere consultar",listaDeCuentas)
+        if resultadoBusqueda[0]:
+            cuenta = resultadoBusqueda[1]
+            cuenta.consultarSaldo()
+        else:
+            print("Cuenta no encontrada")
     elif operacion == "R":
-        cuenta = buscarCuentas("Por favor ingrese la cuenta de la quiere retirar")
-        monto = float(input("Ingrese el monto que quiere retirar: "))
-        cuenta.retirar(monto)
+        resultadoBusqueda = buscarCuentas("Por favor ingrese la cuenta de la quiere retirar", listaDeCuentas)
+        if resultadoBusqueda[0]:
+            monto = float(input("Ingrese el monto que quiere retirar: "))
+            cuenta = resultadoBusqueda[1]
+            cuenta.retirar(monto)
+        else:
+            print("Cuenta no encontrada")
     elif operacion == "C":
-        cuenta = buscarCuentas("Por favor ingrese la cuenta a la quiere consignar")
-        monto = float(input("Ingrese el monto que quiere consignar: "))
-        cuenta.consignar(monto)
-        print("Consignación exitosa")
+        resultadoBusqueda = buscarCuentas("Por favor ingrese la cuenta a la quiere consignar", listaDeCuentas)
+        if resultadoBusqueda[0]:
+            monto = float(input("Ingrese el monto que quiere consignar: "))
+            cuenta = resultadoBusqueda[1]
+            cuenta.consignar(monto)
+            print("Consignación exitosa")
+        else:
+            print("Cuenta no encontrada")
     else:
         print("Operación incorrecta")
         
