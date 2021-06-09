@@ -16,3 +16,11 @@
 #6. crear manualmente un producto y agregarlo a la lista de productos de la tienda
 #7. hacer un while true, pedirle al usuario un input para que el usuario ingrese el comando
     "NP" que cree un nuevo producto en la tienda.
+#8. hacer un método en la clase tienda 
+    para imprimir el nombre y el inventario 
+    de cada uno de los productos de la tienda
+#9. hacer una función de "venta" en la clase tienda. es una función que recibe el nombre
+    del producto y la cantidad de elementos que se quiere comprar
+        si hay inventario suficiente, calcular el total de la venta (cantidad * precio) y mostrar "venta exitosa".
+            después, restar la cantidad vendida del inventario.
+        si no hay inventario suficiente, mostrar un mensaje que diga que no hay unidades.
