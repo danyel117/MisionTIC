@@ -1,5 +1,5 @@
 import random
-from .persona import Persona
+from persona import Persona
 
 #ejercicio opcional: crear una lista de cuentas y agregar la posibilidad 
 # de crear una cuenta nueva o eliminar una cuenta

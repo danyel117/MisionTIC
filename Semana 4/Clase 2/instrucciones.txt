@@ -1,0 +1,14 @@
+#1. hacer una clase que se llama Tienda
+#2. atributos:
+    #nombre
+    #pagina web
+    #direccion
+    #listaDeProductos
+#3. crear un código por fuera de la clase para inicializar la tienda
+    #pedirle al usuario el nombre de la tienda, la página web y la dirección
+#4. en un archivo separado (producto.py), crear la clase producto
+    # atributos:
+        # nombre del producto
+        # precio del producto
+        # referencia del producto REF#### ####=aleatorio de 1000 a 10000
+        # inventario aleatorio entre 0 y 100
