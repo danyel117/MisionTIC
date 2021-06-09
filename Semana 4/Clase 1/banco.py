@@ -1,4 +1,5 @@
 import random
+from .persona import Persona
 
 #ejercicio opcional: crear una lista de cuentas y agregar la posibilidad 
 # de crear una cuenta nueva o eliminar una cuenta
@@ -8,9 +9,10 @@ import random
 #Hay que construir una lista de personas. Si la persona no existe, se debe crear.
 
 class CuentaBancaria:
-    def __init__(self,saldoInicial):
+    def __init__(self,saldoInicial,personaPropietaria):
         self.numeroCuenta = random.randint(1000,10000)
         self.saldo = saldoInicial
+        self.propietario = personaPropietaria
     def retirar(self, monto):
         if monto > self.saldo:
             print("Fondos insuficientes")
@@ -45,7 +47,17 @@ while True:
     operacion = input("Ingrese N para crear una nueva cuenta, S para consultar el saldo, R para retirar y C para consignar: ").upper()
     if operacion == "N":
         saldoInicial = float(input("Bienvenido al banco XYZ. Para crear su cuenta bancaria, ingrese el saldo inicial de la cuenta: "))
-        nuevaCuenta = CuentaBancaria(saldoInicial)
+        
+        #por hacer:
+        #1. pedirle la cédula al usuario.
+        #2. buscar el usuario. Si existe, asociar la cuenta a ese usuario.
+        #3. si no existe, preguntar la info personal de la persona, crear la persona y asociar la nueva cuenta a esa persona
+        
+        #crear una nueva persona
+        nuevaPersona = Persona("Daniel",48, 23434, "dsl@c.com","sfdsf","Colombiano","ingeniero")
+        
+        #crear una nueva cuenta bancaria y asociarla a la persona recientemente creada
+        nuevaCuenta = CuentaBancaria(saldoInicial, nuevaPersona)
         listaDeCuentas.append(nuevaCuenta)
         print("Cuenta creada con éxito. El número de la cuenta es ", nuevaCuenta.numeroCuenta)
     elif operacion == "S":
