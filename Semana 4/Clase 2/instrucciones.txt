@@ -12,3 +12,7 @@
         # precio del producto
         # referencia del producto REF#### ####=aleatorio de 1000 a 10000
         # inventario aleatorio entre 0 y 100
+#5. crear un método (agregarProducto) en la clase Tienda para agregar un nuevo producto
+#6. crear manualmente un producto y agregarlo a la lista de productos de la tienda
+#7. hacer un while true, pedirle al usuario un input para que el usuario ingrese el comando
+    "NP" que cree un nuevo producto en la tienda.
