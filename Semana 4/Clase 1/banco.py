@@ -41,7 +41,14 @@ def buscarCuentas(mensajeOperacion, listaDeCuentas):
             return cuentaIteracion
     return False
 
+def buscarPersona(cedula,listaDePersonas):
+    for persona in listaDePersonas:
+        if persona.documento == cedula:
+            return persona
+    return False
+
 listaDeCuentas = []
+listaDePersonas = []
 
 while True:
     operacion = input("Ingrese N para crear una nueva cuenta, S para consultar el saldo, R para retirar y C para consignar: ").upper()
@@ -50,15 +57,22 @@ while True:
         
         #por hacer:
         #1. pedirle la cédula al usuario.
+        cedula  = input("Por favor ingrese su cédula: ")
         #2. buscar el usuario. Si existe, asociar la cuenta a ese usuario.
+        personaEncontrada = buscarPersona(cedula,listaDePersonas)
         #3. si no existe, preguntar la info personal de la persona, crear la persona y asociar la nueva cuenta a esa persona
-        
-        #crear una nueva persona
-        nuevaPersona = Persona("Daniel",48, 23434, "dsl@c.com","sfdsf","Colombiano","ingeniero")
-        
-        #crear una nueva cuenta bancaria y asociarla a la persona recientemente creada
-        nuevaCuenta = CuentaBancaria(saldoInicial, nuevaPersona)
-        listaDeCuentas.append(nuevaCuenta)
+        if not personaEncontrada:
+            #crear una nueva persona
+            nuevaPersona = Persona("Daniel",48, 23434, "dsl@c.com","sfdsf","Colombiano","ingeniero","1065377193")
+            listaDePersonas.append(nuevaPersona)
+            #crear una nueva cuenta bancaria y asociarla a la persona recientemente creada
+            nuevaCuenta = CuentaBancaria(saldoInicial, nuevaPersona)
+            listaDeCuentas.append(nuevaCuenta)
+        else:
+            #crear una nueva cuenta bancaria y asociarla a la persona recientemente creada
+            nuevaCuenta = CuentaBancaria(saldoInicial, personaEncontrada)
+            listaDeCuentas.append(nuevaCuenta)
+
         print("Cuenta creada con éxito. El número de la cuenta es ", nuevaCuenta.numeroCuenta)
     elif operacion == "S":
         resultadoBusqueda = buscarCuentas("Por favor ingrese la cuenta que quiere consultar",listaDeCuentas)
