@@ -6,8 +6,3 @@ class Producto:
         self.precio = precio
         self.referencia = "REF"+str(random.randint(1000,10000))
         self.inventario = random.randint(0,100)
-+
-
-class OtraClase:
-    def __init__(self):
-        self.att = "hola"

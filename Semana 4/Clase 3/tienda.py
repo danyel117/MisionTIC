@@ -1,5 +1,4 @@
 from producto import Producto
-from producto import OtraClase
 
 #1:
 class Tienda:
@@ -18,6 +17,12 @@ class Tienda:
             print("Producto: ",producto.nombre)
             print("Inventario: ",producto.inventario)
             print("___________")
+    
+    def buscarProductoPorNombre(self,nombreProductoABuscar):
+        for producto in self.listaDeProductos:
+            if producto.nombre == nombreProductoABuscar:
+                return producto
+        return False
 
 
 
@@ -39,5 +44,18 @@ while True:
         tienda.agregarProducto(productoCreado)
     elif operacion == "I":
         tienda.imprimirProductosEInventarios()
+    elif operacion == "V":
+        nombreProducto = input("Ingrese el nombre del producto que quiere comprar: ")
+        productoEncontrado = tienda.buscarProductoPorNombre(nombreProducto)
+        if not productoEncontrado:
+            print("El producto no fue encontrado")
+        else:
+            cantidadAComprar = int(input("Ingrese la cantidad a comprar: "))
+            if productoEncontrado.inventario >= cantidadAComprar:
+                total = productoEncontrado.precio * cantidadAComprar
+                print(f"Venta Exitosa, el total de la venta es: ${total} pesos")
+                productoEncontrado.inventario -= cantidadAComprar
+            else:
+                print("No hay inventario suficiente de la referencia que desea comprar")
 
 
