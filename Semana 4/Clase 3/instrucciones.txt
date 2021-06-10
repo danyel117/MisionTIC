@@ -24,3 +24,14 @@
         si hay inventario suficiente, calcular el total de la venta (cantidad * precio) y mostrar "venta exitosa".
             después, restar la cantidad vendida del inventario.
         si no hay inventario suficiente, mostrar un mensaje que diga que no hay unidades.
+#10. crear un nuevo archivo de python que se va a llamar main.py
+    # es un archivo que va a contener la lógica de la aplicación y va a hacer uso de Tienda
+    # y de producto
+    # main.py: 
+        imports
+        creación de tienda
+        while True
+    # producto.py
+        class Product:
+    # tienda.py
+        class Tienda:
