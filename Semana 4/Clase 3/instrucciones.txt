@@ -39,3 +39,10 @@
     ejecutar cada venta.
     también, crear una nueva operación para revisar el total de
     las ventas cuando se requiera
+
+#12. crear un acumulado de ventas por cada vendedor y luego
+    de cada venta, decirle cuánto le falta para llegar al objetivo
+
+#13. crear un acumulado de compra para cada cliente.
+    si el cliente se pasa de un rango definible en la tienda,
+    se le da un descuento del 10% en cada compra
