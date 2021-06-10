@@ -15,6 +15,7 @@ while True:
         Ingrese NP para crear un nuevo producto, 
         I para imprimir los productos e inventarios
         V para ejecutar una venta
+        TV para revisar el total de ventas
     """
     operacion = input(instrucciones)
     if operacion == "NP":
@@ -37,8 +38,11 @@ while True:
                 total = productoEncontrado.precio * cantidadAComprar
                 print(f"Venta Exitosa, el total de la venta es: ${total} pesos")
                 productoEncontrado.inventario = productoEncontrado.inventario - cantidadAComprar
+                tienda.totalVentas = tienda.totalVentas + total
+                print(f"El total de ventas realizadas en el día es de: ${tienda.totalVentas} pesos")
                 #productoEncontrado.inventario -= cantidadAComprar
             else:
                 print("No hay inventario suficiente de la referencia que desea comprar")
-
+    elif operacion == "TV":
+        tienda.mostrarTotalDeVentas()
 

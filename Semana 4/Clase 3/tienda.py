@@ -8,6 +8,7 @@ class Tienda:
         self.paginaWeb = paginaWeb
         self.direccion = direccion
         self.listaDeProductos = []
+        self.totalVentas = 0
     #5:
     def agregarProducto(self,productoAAgregar):
         self.listaDeProductos.append(productoAAgregar)
@@ -24,3 +25,6 @@ class Tienda:
             if producto.nombre == nombreProductoABuscar:
                 return producto
         return False
+
+    def mostrarTotalDeVentas(self):
+        print(f"El total de ventas acumuladas al momento es de: ${self.totalVentas} pesos")

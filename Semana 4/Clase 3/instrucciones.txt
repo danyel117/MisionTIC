@@ -35,3 +35,7 @@
         class Product:
     # tienda.py
         class Tienda:
+#11. Crear un acumulado de ventas totales que se muestre luego de
+    ejecutar cada venta.
+    también, crear una nueva operación para revisar el total de
+    las ventas cuando se requiera
