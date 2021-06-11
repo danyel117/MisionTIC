@@ -1,30 +1,45 @@
 from producto import Producto
 
-#1:
+# 1:
+
+
 class Tienda:
-    #2:
-    def __init__(self,nombre,paginaWeb,direccion):
+    # 2:
+    def __init__(self, nombre, paginaWeb, direccion):
         self.nombre = nombre
         self.paginaWeb = paginaWeb
         self.direccion = direccion
         self.listaDeProductos = []
+        self.listaDeVendedores = []
         self.totalVentas = 0
-    #5:
-    def agregarProducto(self,productoAAgregar):
+    # 5:
+
+    def agregarProducto(self, productoAAgregar):
         self.listaDeProductos.append(productoAAgregar)
-    #8:
+    # 8:
+
     def imprimirProductosEInventarios(self):
         for producto in self.listaDeProductos:
-            print("Producto: ",producto.nombre)
-            print("Inventario: ",producto.inventario)
+            print("Producto: ", producto.nombre)
+            print("Inventario: ", producto.inventario)
             print("___________")
-    
-    #9:
-    def buscarProductoPorNombre(self,nombreProductoABuscar):
+
+    # 9:
+    def buscarProductoPorNombre(self, nombreProductoABuscar):
         for producto in self.listaDeProductos:
             if producto.nombre == nombreProductoABuscar:
                 return producto
         return False
 
     def mostrarTotalDeVentas(self):
-        print(f"El total de ventas acumuladas al momento es de: ${self.totalVentas} pesos")
+        print(
+            f"El total de ventas acumuladas al momento es de: ${self.totalVentas} pesos")
+
+    def agregarVendedor(self, vendedor):
+        self.listaDeVendedores.append(vendedor)
+
+    def buscarVendedorPorDocumento(self, documento):
+        for vendedor in self.listaDeVendedores:
+            if vendedor.documento == documento:
+                return vendedor
+        return False
