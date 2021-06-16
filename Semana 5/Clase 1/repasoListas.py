@@ -1,6 +1,6 @@
 # definir una lista
 lista = [1, 5, 2345, 213, -12, 234, 1, 10]
-# _______ 0  1   2     3    4   5   6   7
+# _______0  1   2     3    4   5   6   7
 
 # imprimir una lista
 print(lista)

@@ -16,11 +16,19 @@
 
 # si ya hay 10 pacientes en espera, se debe sacar un mensaje de error.
 
+# TAREA: asignarle un turno a un paciente. El turno es un consecutivo
+# que se da en orden de llegada. empieza en 0 y aumenta de 1 en 1, y es
+# un texto compuesto por la palabra TURNO y el número de llegada de la persona.
+# agregar un método que permita buscar un paciente por documento y que retorne
+# su turno.
+# adicionalmente, cuando el turno llega a 9, debe reiniciar en 0.
+
 
 # 1. hacer una clase Clinica y una clase Paciente
 class Clinica:
     def __init__(self, nombre):
         self.nombre = nombre
+        self.contadorTurnos = 0
         self.listaPacientes = []
 
     # 2. agregar un método para ingresar pacientes
@@ -29,9 +37,12 @@ class Clinica:
         documento = input("Ingrese el documento del paciente: ")
         # 4. revisar que haya menos de 10 pacientes
         if len(self.listaPacientes) < 10:
+            if self.contadorTurnos == 10:
+                self.contadorTurnos = 0
             pacienteAIngresar = Paciente(
-                nombre, documento, len(self.listaPacientes))
+                nombre, documento, "TURNO" + str(self.contadorTurnos))
             self.listaPacientes.append(pacienteAIngresar)
+            self.contadorTurnos = self.contadorTurnos + 1
         else:
             # mostrar un error si se quiere ingresar mas de 10 pacientes
             print("Lo sentimos, la clínica está llena y ya tiene 10 pacientes")
@@ -42,8 +53,15 @@ class Clinica:
         print("Por favor que siga el paciente ", pacienteAtendido.nombre,
               " con documento ", pacienteAtendido.documento)
 
+    def buscarPaciente(self, documentoABuscar):
+        for paciente in self.listaPacientes:
+            if paciente.documento == documentoABuscar:
+                return paciente
+        return False
 
 # 1. hacer una clase Clinica y una clase Paciente
+
+
 class Paciente:
     def __init__(self, nombre, documento, turno):
         self.nombre = nombre
@@ -51,7 +69,7 @@ class Paciente:
         self.turno = turno
 
     def __str__(self):
-        return self.nombre + " " + self.documento
+        return self.nombre + " " + self.documento + " " + self.turno
 
 
 clinica = Clinica("Clinica MisionTIC")
@@ -61,6 +79,7 @@ while True:
         Ingrese P para registrar un nuevo paciente
         Ingrese A para atender un nuevo paciente
         Ingrese L para listar todos los pacientes
+        Ingrese B para buscar un paciente por su documento
     """
     inputUsuario = input(operaciones)
 
@@ -72,3 +91,12 @@ while True:
         print("El total de pacientes es: ", len(clinica.listaPacientes))
         for paciente in clinica.listaPacientes:
             print(paciente)
+    elif inputUsuario == "B":
+        documentoABuscar = input(
+            "Por favor ingrese el documento de la persona: ")
+        pacienteEncontrado = clinica.buscarPaciente(documentoABuscar)
+        if not pacienteEncontrado:
+            print("Paciente no encontrado")
+        else:
+            print(
+                f"El paciente {pacienteEncontrado.nombre} tiene el turno {pacienteEncontrado.turno}")
