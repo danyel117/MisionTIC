@@ -24,6 +24,7 @@ class Navegador:
         # actualizar la página actual del navegador
         self.paginaActual = url
 
+    #3. método para regresar a la página anterior
     def regresar(self):
         # obtener la última página a la que se había navegado
         ultimaPagina = self.listaDePaginas.pop()
