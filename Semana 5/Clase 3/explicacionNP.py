@@ -47,3 +47,4 @@ print(matrizEjemplo[2][0])
 
 # obtener el tamaño
 print(matrizEjemplo.shape)
+
