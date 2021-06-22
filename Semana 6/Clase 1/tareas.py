@@ -16,3 +16,25 @@
         #saca la siguiente tarea de la lista y la pone en "tarea actual"
 
 #1. hacer una clase Tarea
+class Task:
+    def __init__(self,description, dueDate):
+        self.description = description
+        self.dueDate = dueDate
+
+    def __str__(self):
+        return self.description + " - " + self.dueDate
+
+#2. hacer la clase usuario
+class User:
+    def __init__(self,name):
+        self.name=name
+        self.currentTask = ''
+        self.taskList = []
+
+    def addTask(self):
+        print("método para agregar una tarea")
+
+    def endTask(self):
+        print("método para finalizar una tarea")
+
+#3. hacer la lógica de la aplicación
