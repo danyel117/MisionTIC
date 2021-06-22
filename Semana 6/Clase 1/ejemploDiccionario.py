@@ -4,6 +4,10 @@
 #hacer una función para convertir una palabra en números
 #la palabra que ingresará tendrá todas las letras separadas por un espacio
 
+#ejemplo: 
+# entrada -> H O L A
+# salida  -> 8 15 12 1
+
 diccionario = {
     'A':1,
     'B':2,
@@ -34,7 +38,12 @@ diccionario = {
 }
 
 def convertirLetrasANumeros(texto):
-    pass
+    listaLetras = texto.split(" ")
+    print(listaLetras)
+    listaNumeros = []
+    for letra in listaLetras:
+        listaNumeros.append(diccionario[letra])
+    return listaNumeros
 
-letra = input("Ingrese la letra que quiera revisar: ")
-print(letra,diccionario[letra.upper()])
+resultado = convertirLetrasANumeros("D A N I E L")
+print(resultado)
