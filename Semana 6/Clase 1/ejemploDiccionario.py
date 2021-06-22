@@ -47,3 +47,4 @@ def convertirLetrasANumeros(texto):
 
 resultado = convertirLetrasANumeros("D A N I E L")
 print(resultado)
+
