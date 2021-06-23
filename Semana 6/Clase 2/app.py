@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
@@ -30,6 +30,7 @@ class User:
 
 @app.route("/")
 def index():
+    print("hola soy un print")
     return render_template('index.html')
 
 @app.route("/ruta2")

@@ -1,0 +1,14 @@
+body {
+  display: flex;
+}
+
+.claseEjemplo {
+  color: blue;
+}
+
+.claseEjemplo2 {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
