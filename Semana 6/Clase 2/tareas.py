@@ -46,11 +46,13 @@ class User:
             print(task)
 
     def endTask(self):
-        #implementar el método endTask de la clase User
+        if len(self.taskList)>0:
+            self.currentTask = self.taskList.pop(0)
+        else:
+            self.currentTask = ''
         print("método para finalizar una tarea")
 
 #3. hacer la lógica de la aplicación
-
 user = User("Daniel")
 
 while True:
@@ -71,4 +73,5 @@ while True:
     elif inputUsuario == "I":
         user.printTasks()
     elif inputUsuario == "F":
+        user.endTask()
         print("Finalizar la tarea actual")
