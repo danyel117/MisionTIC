@@ -32,10 +32,21 @@ class User:
         self.currentTask = ''
         self.taskList = []
 
-    def addTask(self):
-        print("método para agregar una tarea")
+    def addTask(self,newTask):
+        #revisar si el usuario ya tiene una "tarea actual"
+        if self.currentTask == '':
+            self.currentTask = newTask
+        else:
+            self.taskList.append(newTask)
+
+    def printTasks(self):
+        print("tarea actual",self.currentTask)
+        print("lista de tareas: ")
+        for task in self.taskList:
+            print(task)
 
     def endTask(self):
+        #implementar el método endTask de la clase User
         print("método para finalizar una tarea")
 
 #3. hacer la lógica de la aplicación
@@ -46,12 +57,18 @@ while True:
     operaciones = """
         Ingrese A para registrar una nueva tarea
         Ingrese F para finalizar la tarea actual
+        Ingrese I para imprimir la lista de tareas
     """
     inputUsuario = input(operaciones)
     if inputUsuario == "A":
         #pedir al usuario la descripción de la tarea y la fecha límite
+        description = input("Por favor ingrese la descripción de la tarea: ")
+        date = input("Por favor ingrese la fecha de la tarea: ")
         #crear la nueva tarea
+        newTask = Task(description,date)
         #implementar el método addTask de la clase User
-        print("agregar una nueva tarea")
+        user.addTask(newTask)
+    elif inputUsuario == "I":
+        user.printTasks()
     elif inputUsuario == "F":
         print("Finalizar la tarea actual")
