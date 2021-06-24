@@ -1,0 +1,70 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.tareas {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.section {
+  background-color: #ededed;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.tarea {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.fecha {
+  font-size: 12px;
+  color: #818181;
+  font-style: italic;
+  text-align: end;
+}
+
+.descripcion {
+  font-size: 14px;
+}
+
+button {
+  background-color: #556ef4;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 30px;
+  padding-left: 30px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #465bd1;
+}
+
+.tareas-futuras--title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

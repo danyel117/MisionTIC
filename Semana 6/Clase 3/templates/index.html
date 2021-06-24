@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>SISTEMA DE GESTIÓN DE TAREAS</h1>
+    <div class="tareas">
+      <!-- sección para la tarea actual -->
+      <section class="section">
+        <h2>Tarea Actual</h2>
+        <!-- div para mostrar la tarea actual -->
+        <div class="tarea">
+          <span class="descripcion">Esta es la descripción de la tarea</span>
+          <span class="fecha">24/06/2021</span>
+        </div>
+        <button>Finalizar Tarea</button>
+      </section>
+
+      <!-- sección para las tareas futuras -->
+      <section class="section">
+        <div class="tareas-futuras--title">
+          <h2>Tareas Futuras</h2>
+          <button>Agregar nueva tarea</button>
+        </div>
+        <div class="tarea">
+          <span class="descripcion">Esta es la descripción de la tarea</span>
+          <span class="fecha">24/06/2021</span>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
