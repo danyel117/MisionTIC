@@ -18,14 +18,18 @@
           <span class="descripcion">Esta es la descripción de la tarea</span>
           <span class="fecha">24/06/2021</span>
         </div>
-        <button>Finalizar Tarea</button>
+        <form action="/end-task" method="POST">
+          <button>Finalizar Tarea</button>
+        </form>
       </section>
 
       <!-- sección para las tareas futuras -->
       <section class="section">
         <div class="tareas-futuras--title">
           <h2>Tareas Futuras</h2>
-          <button>Agregar nueva tarea</button>
+          <a href="/add-task">
+            <button>Agregar nueva tarea</button>
+          </a>
         </div>
         <div class="tarea">
           <span class="descripcion">Esta es la descripción de la tarea</span>

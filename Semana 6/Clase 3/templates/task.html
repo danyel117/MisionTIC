@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Agregar Nueva Tarea</h1>
+    <form class="form-agregar-tarea" action="/add-task" method="POST">
+      <label for="description">
+        Descripción de la tarea
+        <input name="description" placeholder="Hacer el almuerzo" />
+      </label>
+      <label>
+        Fecha Límite
+        <input name="date" type="date" />
+      </label>
+      <button>Registrar Tarea</button>
+    </form>
+  </body>
+</html>

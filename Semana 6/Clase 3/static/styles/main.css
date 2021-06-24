@@ -5,6 +5,10 @@ body {
   align-items: center;
   font-family: sans-serif;
 }
+form {
+  display: flex;
+  justify-content: center;
+}
 
 .tareas {
   display: flex;
@@ -67,4 +71,26 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.form-agregar-tarea {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-agregar-tarea input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid gray;
+  outline: none;
+}
+
+.form-agregar-tarea input:focus {
+  border-bottom: 2px solid #4d65eb;
+}
+
+.form-agregar-tarea label {
+  display: flex;
+  flex-direction: column;
 }
