@@ -1,5 +1,4 @@
 from flask import Flask, render_template, url_for, redirect, request
-from flask.globals import request
 
 app = Flask(__name__)
 
@@ -39,8 +38,7 @@ user = User("Daniel")
 
 @app.route("/")
 def index():
-    user.printTasks()
-    return render_template("index.html")
+    return render_template("index.html",user=user,currentTask=user.currentTask)
 
 @app.route("/add-task", methods=["GET","POST"])
 def addTask():
