@@ -27,6 +27,7 @@ class Tienda:
         diccProductos={"productos":[]}
         for producto in self.productos:
             diccProductos["productos"].append({"nombre":producto.nombre,"precio":producto.precio})
+            # diccProductos["productos"].append(producto.__dict__)
         with open('productos.json','w') as jsonFile:
             json.dump(diccProductos,jsonFile)
             jsonFile.close()
