@@ -1,0 +1,10 @@
+{
+  "productos": [
+    { "nombre": "arroz", "precio": 500 },
+    { "nombre": "papa", "precio": 200 },
+    { "nombre": "leche", "precio": 1800 },
+    { "nombre": "agua", "precio": 600 },
+    { "nombre": "yuca", "precio": 300 },
+    { "nombre": "carne", "precio": 900 }
+  ]
+}

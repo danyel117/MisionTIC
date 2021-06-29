@@ -1,0 +1,11 @@
+{
+  "lenguaje": "Python",
+  "idioma": "Espa\u00f1ol",
+  "programador": "Daniel Saldarriaga",
+  "fecha": "29/06/2021",
+  "usuarios": [
+    { "nombre": "Carlos", "correo": "c@c.com" },
+    { "nombre": "Felipe", "correo": "f@f.com" },
+    { "nombre": "Maria", "correo": "m@m.com" }
+  ]
+}

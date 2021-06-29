@@ -21,6 +21,13 @@ class Tienda:
         for producto in self.productos:
             print(producto)
 
+    #definir un método para agregar un nuevo cliente
+    def agregarCliente(self,cliente):
+        self.clientes.append(cliente)
+    
+    def imprimirClientes(self):
+        for cliente in self.clientes:
+            print(cliente)
 
 #2. crear una clase Producto que tenga los siguientes atributos:
     #nombre
@@ -42,6 +49,9 @@ class Cliente:
         self.nombre=nombre
         self.documento=documento
         self.compras=[]
+
+    def __str__(self):
+        return self.nombre + " - " + self.documento
     
 
 #4. crear una clase Venta que tenga los siguientes atributos:
@@ -62,6 +72,8 @@ while True:
     instrucciones="""
         ingrese P para agregar un nuevo producto a la tienda
         ingrese IP para imprimir los productos de la tienda
+        ingrese C para agregar un nuevo cliente a la tienda
+        ingrese IC para imprimir los clientes de la tienda
     """
     operacion = input(instrucciones)
     if operacion == "P":
@@ -71,3 +83,10 @@ while True:
         tienda.agregarProducto(nuevoProducto)
     elif operacion == "IP":
         tienda.imprimirProductos()
+    elif operacion == "C":
+        nombreCliente = input("ingrese el nombre del cliente: ")
+        documentoCliente = input("ingrese el documento del cliente: ")
+        nuevoCliente = Cliente(nombreCliente,documentoCliente)
+        tienda.agregarCliente(nuevoCliente)
+    elif operacion == "IC":
+        tienda.imprimirClientes()
