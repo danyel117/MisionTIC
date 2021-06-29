@@ -1,3 +1,4 @@
+import json
 #1. crear una clase Tienda que tenga los siguientes atributos:
     #nombre
     #direccion
@@ -16,10 +17,27 @@ class Tienda:
     #definir un método para agregar un nuevo producto
     def agregarProducto(self,producto):
         self.productos.append(producto)
+        self.convertirProductosADiccionario()
     
     def imprimirProductos(self):
         for producto in self.productos:
             print(producto)
+
+    def convertirProductosADiccionario(self):
+        diccProductos={"productos":[]}
+        for producto in self.productos:
+            diccProductos["productos"].append({"nombre":producto.nombre,"precio":producto.precio})
+        with open('productos.json','w') as jsonFile:
+            json.dump(diccProductos,jsonFile)
+            jsonFile.close()
+
+    def convertirDiccionarioAProductos(self):
+        with open('productos.json') as jsonFile:
+            diccionarioProductos = json.load(jsonFile)
+            jsonFile.close()
+        for producto in diccionarioProductos["productos"]:
+            nuevoProducto = Producto(producto["nombre"],producto["precio"])
+            self.productos.append(nuevoProducto)
 
     #definir un método para agregar un nuevo cliente
     def agregarCliente(self,cliente):
@@ -67,6 +85,8 @@ class Venta:
 
 #crear la lógica de la aplicación
 tienda = Tienda("Tienda MisionTIC","calle 123","321")
+tienda.convertirDiccionarioAProductos()
+
 
 while True:
     instrucciones="""
@@ -83,6 +103,7 @@ while True:
         tienda.agregarProducto(nuevoProducto)
     elif operacion == "IP":
         tienda.imprimirProductos()
+        tienda.convertirProductosADiccionario()
     elif operacion == "C":
         nombreCliente = input("ingrese el nombre del cliente: ")
         documentoCliente = input("ingrese el documento del cliente: ")
