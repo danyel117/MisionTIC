@@ -1,6 +1,4 @@
 import csv
-from os import error
-from typing import cast
 
 riesgos = [["Fecha","Edad","Riesgo"]]
 with open('dtcsv_mod.csv',newline="") as Data:
