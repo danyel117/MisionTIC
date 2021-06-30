@@ -52,7 +52,6 @@ def addTask():
         user.addTask(newTask)
         return redirect("/")
 
-
 @app.route("/end-task",methods=["GET","POST"])
 def endTask():
     user.endTask()

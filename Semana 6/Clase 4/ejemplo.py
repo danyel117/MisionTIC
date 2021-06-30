@@ -27,8 +27,6 @@ def calculoNumeroANumero(string1,string2,operacion):
         elif operacion == "division":
             resultadoNumero = int(string1[i]) / int(string2[i])
             resultado = resultado + str(resultadoNumero)
-        
-
     return resultado
 
 
