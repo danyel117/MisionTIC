@@ -1,0 +1,150 @@
+Pais;Region;Score;GDP;Social Support;Healthy Life;Freedom;Generosity;Corruption;Tipo;Indicador
+Finland;Western Europe;7.842;10.775;0.954;72.0;0.949;-0.098;0.186;feliz;14.127666666666668
+Denmark;Western Europe;7.62;10.933;0.954;72.7;0.946;0.03;0.179;feliz;14.290333333333335
+Switzerland;Western Europe;7.571;11.117;0.942;74.4;0.919;0.025;0.292;feliz;14.615833333333335
+Iceland;Western Europe;7.554;10.878;0.983;73.0;0.955;0.16;0.673;feliz;14.4415
+Netherlands;Western Europe;7.464;10.932;0.942;72.4;0.913;0.175;0.338;feliz;14.283333333333331
+Norway;Western Europe;7.392;11.053;0.954;73.3;0.96;0.093;0.27;feliz;14.438333333333333
+Sweden;Western Europe;7.363;10.867;0.934;72.7;0.945;0.086;0.237;feliz;14.294833333333331
+Luxembourg;Western Europe;7.324;11.647;0.908;72.6;0.907;-0.034;0.386;feliz;14.402333333333331
+New Zealand;North America and ANZ;7.277;10.643;0.948;73.4;0.929;0.134;0.242;feliz;14.38266666666667
+Austria;Western Europe;7.268;10.906;0.934;73.3;0.908;0.042;0.481;feliz;14.4285
+Australia;North America and ANZ;7.183;10.796;0.94;73.9;0.914;0.159;0.442;feliz;14.525166666666669
+Israel;Middle East and North Africa;7.157;10.575;0.939;73.503;0.8;0.031;0.753;feliz;14.4335
+Germany;Western Europe;7.155;10.873;0.903;72.5;0.875;0.011;0.46;feliz;14.270333333333332
+Canada;North America and ANZ;7.103;10.776;0.926;73.8;0.915;0.089;0.415;feliz;14.486833333333335
+Ireland;Western Europe;7.085;11.342;0.947;72.4;0.879;0.077;0.363;feliz;14.334666666666669
+Costa Rica;Latin America and Caribbean;7.069;9.88;0.891;71.4;0.934;-0.126;0.809;feliz;13.964666666666666
+United Kingdom;Western Europe;7.064;10.707;0.934;72.5;0.859;0.233;0.459;feliz;14.282000000000002
+Czech Republic;Central and Eastern Europe;6.965;10.556;0.947;70.807;0.858;-0.208;0.868;feliz;13.971333333333334
+United States;North America and ANZ;6.951;11.023;0.92;68.2;0.837;0.098;0.698;feliz;13.629333333333333
+Belgium;Western Europe;6.834;10.823;0.906;72.199;0.783;-0.153;0.646;feliz;14.200666666666665
+France;Western Europe;6.69;10.704;0.942;74.0;0.822;-0.147;0.571;feliz;14.482
+Bahrain;Middle East and North Africa;6.647;10.669;0.862;69.495;0.925;0.089;0.722;feliz;13.793666666666667
+Malta;Western Europe;6.602;10.674;0.931;72.2;0.927;0.133;0.653;feliz;14.253000000000002
+Taiwan Province of China;East Asia;6.584;10.871;0.898;69.6;0.784;-0.07;0.721;feliz;13.80066666666667
+United Arab Emirates;Middle East and North Africa;6.561;11.085;0.844;67.333;0.932;0.074;0.589;feliz;13.476166666666666
+Saudi Arabia;Middle East and North Africa;6.494;10.743;0.891;66.603;0.877;-0.149;0.684;feliz;13.274833333333332
+Spain;Western Europe;6.491;10.571;0.932;74.7;0.761;-0.081;0.745;feliz;14.604666666666667
+Italy;Western Europe;6.483;10.623;0.88;73.8;0.693;-0.084;0.866;feliz;14.463
+Slovenia;Central and Eastern Europe;6.461;10.529;0.948;71.4;0.949;-0.101;0.806;feliz;14.088500000000002
+Guatemala;Latin America and Caribbean;6.435;9.053;0.813;64.958;0.906;-0.038;0.775;feliz;12.744500000000002
+Uruguay;Latin America and Caribbean;6.431;9.966;0.925;69.1;0.896;-0.092;0.59;feliz;13.564166666666667
+Singapore;Southeast Asia;6.377;11.488;0.915;76.953;0.927;-0.018;0.082;feliz;15.057833333333333
+Kosovo;Central and Eastern Europe;6.372;9.318;0.821;63.813;0.869;0.257;0.917;feliz;12.665833333333333
+Slovakia;Central and Eastern Europe;6.331;10.369;0.936;69.201;0.766;-0.124;0.911;feliz;13.676500000000003
+Brazil;Latin America and Caribbean;6.33;9.577;0.882;66.601;0.804;-0.071;0.756;feliz;13.091500000000002
+Mexico;Latin America and Caribbean;6.317;9.859;0.831;68.597;0.862;-0.147;0.799;feliz;13.466833333333332
+Jamaica;Latin America and Caribbean;6.309;9.186;0.877;67.5;0.89;-0.137;0.884;feliz;13.200000000000001
+Lithuania;Central and Eastern Europe;6.255;10.499;0.935;67.906;0.773;-0.203;0.826;feliz;13.455999999999998
+Cyprus;Western Europe;6.223;10.576;0.802;73.898;0.763;-0.015;0.844;feliz;14.478
+Estonia;Central and Eastern Europe;6.189;10.481;0.941;68.8;0.909;-0.106;0.527;feliz;13.592
+Panama;Latin America and Caribbean;6.18;10.35;0.896;69.652;0.872;-0.166;0.856;feliz;13.743333333333332
+Uzbekistan;Commonwealth of Independent States;6.179;8.836;0.918;65.255;0.97;0.311;0.515;feliz;12.800833333333335
+Chile;Latin America and Caribbean;6.172;10.071;0.882;70.0;0.742;-0.044;0.83;feliz;13.746833333333335
+Poland;Central and Eastern Europe;6.166;10.382;0.898;69.702;0.841;-0.165;0.735;feliz;13.732166666666664
+Kazakhstan;Commonwealth of Independent States;6.152;10.155;0.952;65.2;0.853;-0.069;0.733;feliz;12.970666666666666
+Romania;Central and Eastern Europe;6.14;10.284;0.832;67.355;0.845;-0.219;0.938;feliz;13.339166666666669
+Kuwait;Middle East and North Africa;6.106;10.817;0.843;66.9;0.867;-0.104;0.736;feliz;13.343166666666669
+Serbia;Central and Eastern Europe;6.078;9.787;0.873;68.6;0.778;0.002;0.835;feliz;13.479166666666664
+El Salvador;Latin America and Caribbean;6.061;9.054;0.762;66.402;0.888;-0.11;0.688;feliz;12.947333333333335
+Mauritius;Sub-Saharan Africa;6.049;10.008;0.905;66.701;0.867;-0.054;0.789;feliz;13.202666666666666
+Latvia;Central and Eastern Europe;6.032;10.315;0.927;67.1;0.715;-0.162;0.8;feliz;13.282499999999999
+Colombia;Latin America and Caribbean;6.012;9.557;0.847;68.001;0.837;-0.135;0.841;feliz;13.324666666666666
+Hungary;Central and Eastern Europe;5.992;10.358;0.943;68.0;0.755;-0.186;0.876;indiferente;13.457666666666666
+Thailand;Southeast Asia;5.985;9.805;0.888;67.401;0.884;0.287;0.895;indiferente;13.36
+Nicaragua;Latin America and Caribbean;5.972;8.62;0.864;67.657;0.836;0.02;0.664;indiferente;13.110166666666665
+Japan;East Asia;5.94;10.611;0.884;75.1;0.796;-0.258;0.638;indiferente;14.628500000000003
+Argentina;Latin America and Caribbean;5.929;9.962;0.898;69.0;0.828;-0.182;0.834;indiferente;13.556666666666667
+Portugal;Western Europe;5.929;10.421;0.879;72.6;0.892;-0.244;0.887;indiferente;14.239166666666664
+Honduras;Latin America and Caribbean;5.919;8.648;0.812;67.3;0.857;0.081;0.809;indiferente;13.084499999999998
+Croatia;Central and Eastern Europe;5.882;10.217;0.924;70.799;0.754;-0.118;0.939;indiferente;13.91916666666667
+Philippines;Southeast Asia;5.88;9.076;0.83;62.0;0.917;-0.097;0.742;indiferente;12.244666666666669
+South Korea;East Asia;5.845;10.651;0.799;73.9;0.672;-0.083;0.727;indiferente;14.444333333333335
+Peru;Latin America and Caribbean;5.84;9.458;0.832;68.25;0.822;-0.154;0.891;indiferente;13.349833333333336
+Bosnia and Herzegovina;Central and Eastern Europe;5.813;9.59;0.87;68.098;0.706;0.113;0.931;indiferente;13.384666666666666
+Moldova;Commonwealth of Independent States;5.766;9.454;0.857;65.699;0.822;-0.079;0.918;indiferente;12.945166666666667
+Ecuador;Latin America and Caribbean;5.764;9.313;0.821;68.8;0.842;-0.124;0.843;indiferente;13.415833333333333
+Kyrgyzstan;Commonwealth of Independent States;5.744;8.538;0.893;64.401;0.935;0.119;0.908;indiferente;12.632333333333333
+Greece;Western Europe;5.723;10.279;0.823;72.6;0.582;-0.288;0.823;indiferente;14.136499999999998
+Bolivia;Latin America and Caribbean;5.716;9.046;0.81;63.901;0.875;-0.077;0.839;indiferente;12.565666666666667
+Mongolia;East Asia;5.677;9.4;0.935;62.5;0.708;0.116;0.856;indiferente;12.419166666666667
+Paraguay;Latin America and Caribbean;5.653;9.448;0.893;65.9;0.876;0.028;0.882;indiferente;13.004500000000005
+Montenegro;Central and Eastern Europe;5.581;9.94;0.858;68.699;0.708;-0.034;0.812;indiferente;13.497166666666665
+Dominican Republic;Latin America and Caribbean;5.545;9.802;0.853;66.102;0.86;-0.133;0.714;indiferente;13.033000000000001
+North Cyprus;Western Europe;5.536;10.576;0.82;73.898;0.795;0.012;0.626;indiferente;14.454500000000001
+Belarus;Commonwealth of Independent States;5.534;9.853;0.91;66.253;0.65;-0.18;0.627;indiferente;13.018833333333333
+Russia;Commonwealth of Independent States;5.477;10.189;0.903;64.703;0.718;-0.111;0.845;indiferente;12.8745
+Hong Kong S.A.R. of China;East Asia;5.477;11.0;0.836;76.82;0.717;0.067;0.403;indiferente;14.973833333333332
+Tajikistan;Commonwealth of Independent States;5.466;8.091;0.86;64.281;0.832;-0.056;0.553;indiferente;12.426833333333333
+Vietnam;Southeast Asia;5.411;8.973;0.85;68.034;0.94;-0.098;0.796;indiferente;13.249166666666667
+Libya;Middle East and North Africa;5.41;9.622;0.827;62.3;0.771;-0.087;0.667;indiferente;12.35
+Malaysia;Southeast Asia;5.384;10.238;0.817;67.102;0.895;0.125;0.839;indiferente;13.336
+Indonesia;Southeast Asia;5.345;9.365;0.811;62.236;0.873;0.542;0.867;indiferente;12.449
+Congo (Brazzaville);Sub-Saharan Africa;5.342;8.117;0.636;58.221;0.695;-0.068;0.745;indiferente;11.390999999999998
+China;East Asia;5.339;9.673;0.811;69.593;0.904;-0.146;0.755;indiferente;13.598333333333331
+Ivory Coast;Sub-Saharan Africa;5.306;8.551;0.644;50.114;0.741;-0.016;0.794;indiferente;10.138
+Armenia;Commonwealth of Independent States;5.283;9.487;0.799;67.055;0.825;-0.168;0.629;indiferente;13.104500000000002
+Nepal;South Asia;5.269;8.12;0.774;64.233;0.782;0.152;0.727;indiferente;12.464666666666668
+Bulgaria;Central and Eastern Europe;5.266;10.016;0.931;67.0;0.788;-0.096;0.932;indiferente;13.261833333333334
+Maldives;South Asia;5.198;9.826;0.913;70.6;0.854;0.024;0.825;indiferente;13.840333333333334
+Azerbaijan;Commonwealth of Independent States;5.171;9.569;0.836;65.656;0.814;-0.223;0.506;indiferente;12.859666666666667
+Cameroon;Sub-Saharan Africa;5.142;8.189;0.71;53.515;0.731;0.026;0.848;indiferente;10.669833333333335
+Senegal;Sub-Saharan Africa;5.132;8.118;0.71;59.802;0.695;-0.046;0.801;indiferente;11.679999999999998
+Albania;Central and Eastern Europe;5.117;9.52;0.697;68.999;0.785;-0.03;0.901;indiferente;13.478666666666664
+North Macedonia;Central and Eastern Europe;5.101;9.693;0.805;65.474;0.751;0.038;0.905;indiferente;12.944333333333335
+Ghana;Sub-Saharan Africa;5.088;8.58;0.727;57.586;0.807;0.123;0.848;indiferente;11.445166666666667
+Niger;Sub-Saharan Africa;5.074;7.098;0.641;53.78;0.806;0.018;0.693;indiferente;10.505999999999998
+Turkmenistan;Commonwealth of Independent States;5.066;9.629;0.983;62.409;0.877;0.273;0.888;indiferente;12.509833333333333
+Gambia;Sub-Saharan Africa;5.051;7.686;0.69;55.16;0.697;0.424;0.746;indiferente;10.9005
+Benin;Sub-Saharan Africa;5.045;8.087;0.489;54.713;0.757;-0.034;0.661;indiferente;10.778833333333333
+Laos;Southeast Asia;5.03;8.947;0.728;58.968;0.91;0.123;0.658;indiferente;11.722333333333333
+Bangladesh;South Asia;5.025;8.454;0.693;64.8;0.877;-0.041;0.682;indiferente;12.5775
+Guinea;Sub-Saharan Africa;4.984;7.838;0.639;55.008;0.697;0.095;0.766;indiferente;10.8405
+South Africa;Sub-Saharan Africa;4.956;9.403;0.86;56.904;0.749;-0.067;0.86;indiferente;11.451500000000001
+Turkey;Middle East and North Africa;4.948;10.24;0.822;67.199;0.576;-0.139;0.776;indiferente;13.245666666666665
+Pakistan;South Asia;4.934;8.458;0.651;58.709;0.726;0.098;0.787;indiferente;11.5715
+Morocco;Middle East and North Africa;4.918;8.903;0.56;66.208;0.774;-0.236;0.801;indiferente;12.834999999999999
+Venezuela;Latin America and Caribbean;4.892;9.073;0.861;66.7;0.615;-0.169;0.827;indiferente;12.984499999999999
+Georgia;Commonwealth of Independent States;4.891;9.585;0.671;64.3;0.783;-0.238;0.655;indiferente;12.626
+Algeria;Middle East and North Africa;4.887;9.342;0.802;66.005;0.48;-0.067;0.752;indiferente;12.885666666666667
+Ukraine;Commonwealth of Independent States;4.875;9.436;0.888;64.902;0.724;-0.011;0.924;indiferente;12.810500000000003
+Iraq;Middle East and North Africa;4.854;9.24;0.746;60.583;0.63;-0.053;0.875;indiferente;12.0035
+Gabon;Sub-Saharan Africa;4.852;9.603;0.776;59.962;0.731;-0.2;0.84;indiferente;11.952
+Burkina Faso;Sub-Saharan Africa;4.834;7.678;0.672;54.151;0.695;-0.009;0.748;indiferente;10.655833333333334
+Cambodia;Southeast Asia;4.83;8.36;0.765;62.0;0.959;0.034;0.843;indiferente;12.160166666666669
+Mozambique;Sub-Saharan Africa;4.794;7.158;0.744;54.706;0.882;0.061;0.684;indiferente;10.705833333333333
+Nigeria;Sub-Saharan Africa;4.759;8.533;0.74;50.102;0.737;0.037;0.878;indiferente;10.171166666666666
+Mali;Sub-Saharan Africa;4.723;7.744;0.724;51.969;0.697;-0.036;0.827;indiferente;10.320833333333333
+Iran;Middle East and North Africa;4.721;9.584;0.71;66.3;0.608;0.218;0.714;indiferente;13.022333333333334
+Uganda;Sub-Saharan Africa;4.636;7.677;0.781;56.101;0.709;0.122;0.855;indiferente;11.040833333333333
+Liberia;Sub-Saharan Africa;4.625;7.288;0.72;56.498;0.735;0.05;0.85;indiferente;11.023499999999999
+Kenya;Sub-Saharan Africa;4.607;8.361;0.688;60.704;0.779;0.287;0.825;indiferente;11.940666666666667
+Tunisia;Middle East and North Africa;4.596;9.266;0.691;67.201;0.656;-0.201;0.87;indiferente;13.0805
+Lebanon;Middle East and North Africa;4.584;9.626;0.848;67.355;0.525;-0.073;0.898;indiferente;13.196500000000002
+Namibia;Sub-Saharan Africa;4.574;9.161;0.818;56.799;0.719;-0.149;0.847;indiferente;11.36583333333333
+Palestinian Territories;Middle East and North Africa;4.517;8.485;0.826;62.25;0.653;-0.163;0.821;indiferente;12.145333333333335
+Myanmar;Southeast Asia;4.426;8.541;0.779;59.302;0.876;0.509;0.66;indiferente;11.777833333333334
+Jordan;Middle East and North Africa;4.395;9.182;0.767;67.0;0.755;-0.167;0.705;indiferente;13.040333333333331
+Chad;Sub-Saharan Africa;4.355;7.364;0.619;48.478;0.579;0.041;0.807;indiferente;9.648
+Sri Lanka;South Asia;4.325;9.47;0.827;67.299;0.841;0.079;0.863;indiferente;13.229833333333332
+Swaziland;Sub-Saharan Africa;4.308;9.065;0.77;50.833;0.647;-0.185;0.708;indiferente;10.306333333333333
+Comoros;Sub-Saharan Africa;4.289;8.031;0.626;57.349;0.548;0.082;0.781;indiferente;11.236166666666668
+Egypt;Middle East and North Africa;4.283;9.367;0.75;61.998;0.749;-0.182;0.795;indiferente;12.246166666666666
+Ethiopia;Sub-Saharan Africa;4.275;7.694;0.764;59.0;0.752;0.082;0.761;indiferente;11.50883333333333
+Mauritania;Sub-Saharan Africa;4.227;8.542;0.795;57.161;0.561;-0.106;0.731;indiferente;11.280666666666669
+Madagascar;Sub-Saharan Africa;4.208;7.396;0.686;59.305;0.552;-0.005;0.803;indiferente;11.456166666666668
+Togo;Sub-Saharan Africa;4.107;7.362;0.569;54.914;0.619;0.032;0.772;indiferente;10.711333333333334
+Zambia;Sub-Saharan Africa;4.073;8.145;0.708;55.809;0.782;0.061;0.823;indiferente;11.054666666666664
+Sierra Leone;Sub-Saharan Africa;3.849;7.434;0.63;51.651;0.717;0.084;0.866;infeliz;10.230333333333334
+India;South Asia;3.819;8.755;0.603;60.633;0.893;0.089;0.774;infeliz;11.957833333333333
+Burundi;Sub-Saharan Africa;3.775;6.635;0.49;53.4;0.626;-0.024;0.607;infeliz;10.289
+Yemen;Middle East and North Africa;3.658;7.578;0.832;57.122;0.602;-0.147;0.8;infeliz;11.131166666666665
+Tanzania;Sub-Saharan Africa;3.623;7.876;0.702;57.999;0.833;0.183;0.577;infeliz;11.361666666666666
+Haiti;Latin America and Caribbean;3.615;7.477;0.54;55.7;0.593;0.422;0.721;infeliz;10.908833333333334
+Malawi;Sub-Saharan Africa;3.6;6.958;0.537;57.948;0.78;0.038;0.729;infeliz;11.165
+Lesotho;Sub-Saharan Africa;3.512;7.926;0.787;48.7;0.715;-0.131;0.915;infeliz;9.818666666666667
+Botswana;Sub-Saharan Africa;3.467;9.782;0.784;59.269;0.824;-0.246;0.801;infeliz;11.869
+Rwanda;Sub-Saharan Africa;3.415;7.676;0.552;61.4;0.897;0.061;0.167;infeliz;11.792166666666668
+Zimbabwe;Sub-Saharan Africa;3.145;7.943;0.75;56.201;0.677;-0.047;0.821;infeliz;11.057500000000003
+Afghanistan;South Asia;2.523;7.695;0.463;52.493;0.382;-0.102;0.924;infeliz;10.309166666666668
