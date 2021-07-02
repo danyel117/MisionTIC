@@ -30,9 +30,29 @@ print(dfHappiness[0:3])
 print(dfHappiness.loc[0,"Generosity"])
 print(dfHappiness.loc[5:10,"Generosity"])
 
-#hacer filtros con Pandas
-# print(dfHappiness[:,])
+#mostrar varias columnas
+nuevoDF = dfHappiness[["Country name","Ladder score","Generosity"]]
 
+#filtrar los países que tienen generosity positivo
+filtro = nuevoDF[nuevoDF["Generosity"]>0]
+print(filtro)
+
+#hacer filtros por dos condiciones
+condicion1 = nuevoDF["Generosity"]>0
+condicion2 = nuevoDF["Ladder score"]>7
+filtro = nuevoDF[condicion1 & condicion2]
+print(filtro)
+
+#iterar un dataframe
+lista = []
+for indice,dato in dfHappiness.iterrows():
+    print(dato["Freedom to make life choices"])
+    if dato["Freedom to make life choices"]>0.5:
+        lista.append("Alta libertad")
+    else:
+        lista.append("Baja libertad")
+dfHappiness["Tipo de libertad"] = lista
+dfHappiness.to_csv('resultado_libertad.csv',sep=";")
 
 
 
