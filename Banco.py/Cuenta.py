@@ -3,7 +3,7 @@ class Cuenta():
 
     tipo_cuenta = 'Cuenta de Ahorros'.center(50, '-')
     print(tipo_cuenta)
-
+    print("Hola")
     contador_i = -2
 
     @classmethod
